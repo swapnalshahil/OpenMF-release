@@ -65,19 +65,25 @@ img.logo {
 }
 
 .footer-clean .item.social {
-  text-align:right;
+  text-align:center;
+  align-content: center;
+  align-items: center;
 }
 
 @media (max-width:767px) {
   .footer-clean .item {
     text-align:center;
     padding-bottom:20px;
+    align-content: center;
+  align-items: center;
   }
 }
 
 @media (max-width: 768px) {
   .footer-clean .item.social {
     text-align:center;
+    align-content: center;
+  align-items: center;
   }
 }
 
@@ -88,6 +94,8 @@ img.logo {
   line-height:40px;
   display:inline-block;
   text-align:center;
+  align-content: center;
+  align-items: center;
   border-radius:50%;
   border:1px solid #ccc;
   margin-left:10px;
@@ -117,4 +125,7 @@ img.logo {
   margin-bottom:0;
   font-size:13px;
   opacity:0.6;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
