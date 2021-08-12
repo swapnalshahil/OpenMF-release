@@ -1,19 +1,156 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="OpenMF">
-    <meta name="description" content="OpenMF">
-    <meta name="keywords" content="scorelab, openmf, mobile forensics, gsoc">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="OpenMF" />
+    <meta name="description" content="OpenMF" />
+    <meta name="keywords" content="scorelab, openmf, mobile forensics, gsoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenMF</title>
-    <link rel="icon" href="img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/openmf.css">
-</head>
-<body>
+    <link rel="icon" href="img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/openmf.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  </head>
+  <body>
     <div class="container">
-    <h1>OpenMF</h1>
+      <img
+        class="logo"
+        src="img\Logo.png"
+        width="300px"
+        align="middle"
+        id="logo"
+      />
     </div>
-</body>
+    <div class="container.analytics">
+      <h2>Analytics</h2>
+      <p>
+        OpenMF analytics is a mobile forensic analytics service offered by SCoRe
+        Lab (Sustainable Computing Research Lab) that helps to analyze data
+        extracted from Android Devices.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            Common Words: Search common between the data.<br />
+            Keyword Search: Search keywords to relate the cases from the overall
+            database as well as from particular case.
+          </div>
+          <div class="column">
+            <h2>Gif</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h2>Gif</h2>
+          </div>
+          <div class="column">Filter: Filter cases date-wise or by tags.</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            Location: Find the searched location from the case.
+          </div>
+          <div class="column">
+            <h2>Gif</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h2>Gif</h2>
+          </div>
+          <div class="column">
+            Data Visualization: Visualize data using maps, graphs, and tables
+            from the case.
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            Relate one case with another using graphs, maps, and tables. Common
+            locations on map, common browser history with frequency on Graph,
+            common call logs, text messages using tables are available on OpenMF
+            front end.
+          </div>
+          <div class="column">
+            <h2>Gif</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container.extraction">
+        <h2>Data Extraction</h2>
+        <p>OpenMF is currently able to extract data of SMS(text messages), Facebook, WhatsApp, Browser history, Bluetooth data, EXIF data from images, Location history, General information of the device, Call logs, and Contacts. Data can be extracted from CMD as well as using API(POSTMAN) or from Frontend also.</p>
+        <li>SMS: Data like thread_id, address, date, date_sent, read, body, creator, seen, sim_slot, sim_imsi.</li>
+        <li>Facebook: Data like text, contacts, senders name, timestamp, profile id.</li>
+        <li>WhatsApp: Data like mobile number, time, text, type, media name.</li>
+        <li>Browser History: Data like URLs, URLs title, Visit count, Urls last visit time, hidden, visit time, visit duration, visits transition, visit source.</li>
+        <li>Bluetooth: Data like shared file path, name of the file, data, type, direction, destination, visibility, status, total bytes, timestamp, device name.</li>
+        <li>EXIF data: Data from images like file path, size, date taken, mime_type, title, description, display name, Picasa id, orientation, latitude, longitude, date added, date modified, mini_thumb_magic, bucket id, bucket display name, album, tags, category, language, storage id, width, and height.</li>
+        <li>Location: Data like latitude, longitude, timestamp, and saved location link.</li>
+        <li>General Information: Data like Shell permission, ADB serial, Manufacturer, Model number, IMEI, Android Version, Build name, Wifi MAC, Local time, Android time, Accounts, Case Name, and Tags.</li>
+        <li>Call logs: Data like number,name,date,duration,type,location, and frequent.</li>
+        <li>Contacts: Data like phone number and display name.</li>
+    </div>
+
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-sm-4 col-md-3 item">
+                        <h3>SCoRe Lab</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="col-lg-6 item social">
+                        <a href="https://www.facebook.com/SCoRe.Lab.Org/"><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="icon ion-social-twitter"></i></a>
+                        <a href="https://gitter.im/scorelab/"><i class="icon fab fa-gitter"></i></a>
+                        <a href="https://medium.com/scorelab/"><i class="icon ion-social-medium"></i></a>
+                        <a href="https://github.com/scorelab/"><i class="icon ion-social-github"></i></a>
+                        <a href="https://www.linkedin.com/company/sustainable-computing-research-group-score-/"><i class="icon ion-social-linkedin"></i></a>
+                        <p class="copyright">SCoRe Lab © 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
