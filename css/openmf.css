@@ -3,6 +3,34 @@ html {
   overflow-y: scroll;
   font-size: 1rem;
   font-family: 'Merriweather', serif;
+  background-color:transparent;
+  background: transparent;
+  color: #ffffff;
+}
+.container-md{
+  text-align:left;
+ 
+  top: 0;
+  right: 0;
+  bottom: 20%;
+  left: 0;
+  margin: auto;
+  margin-top:90px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:transparent;
+  color: #000000;
+  
+   z-index: inherit 1;
+}
+img.scorelab {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: auto;
+    margin-top: 2%;
+    width: "100%";
+    height: "100%";
 }
 img.logo {
     display: block;
@@ -21,6 +49,8 @@ img.logo {
   padding-top: 5%;
   padding-bottom: 5%;
   align-self: center;
+  background-color:transparent;
+  background: transparent;
 }
 
 .column {
@@ -31,20 +61,25 @@ img.logo {
   transform-style: flat;
   align-content: center;
   justify-content: space-around;
+  background-color:transparent;
   
+}
+li {
+  background-color:transparent;
 }
 .analytics {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
+  background-color:transparent;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+  background-color:transparent;
 }
-
 
 
 /*footer*/
@@ -148,3 +183,5 @@ img.logo {
   text-align: center;
   color: rgb(255, 255, 255);
 }
+
+

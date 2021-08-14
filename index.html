@@ -10,6 +10,7 @@
     <title>OpenMF</title>
     <link rel="icon" href="img/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/openmf.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Recursive&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -25,7 +26,9 @@
     />
   </head>
   <body>
-    <div class="container">
+    
+
+    <div class="container container-md">
       <img
         class="logo"
         src="img\Logo.png"
@@ -33,9 +36,12 @@
         align="middle"
         id="logo"
       />
-      <br>
+      <div class="container">
+      <img src="https://scorelab.org/logos/main-logo.jpeg" class="scorelab" align="middle" id="scorelab" height="90px" width="220px" />
+     </div>
     </div>
-    <div class="container">
+     <br>
+    <div class="container container-md">
       <p>
         OpenMF is an open source forensic tool for Android smartphones that
         helps digital forensic investigators throughout the life cycle of
@@ -50,14 +56,14 @@
         forensic case).
       </p>
     </div>
-    <div class="container">
+    <div class="container container-md">
       <h2><i class="fas fa-analytics">Analytics</i></h2>
       <p>
         OpenMF analytics is a mobile forensic analytics service offered by SCoRe
         Lab (Sustainable Computing Research Lab) that helps to analyze data
         extracted from Android Devices.
       </p>
-      <div class="container">
+      <div class="container ">
         <div class="row">
           <div class="column">
             <img
@@ -68,15 +74,14 @@
             />
           </div>
           <div class="column">
-            Common Words: Search common between the data.<br />
+            Common Words: Search common words between the data to relate between two cases.<br />
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container container-md">
         <div class="row">
           <div class="column">
-            Keyword Search: Search keywords to relate the cases from the overall
-            database as well as from particular case.
+            Keyword Search: Search keywords to relate the cases from the overall database as well as from particular cases. OpenMF is able to find cases if you know even a single word related to the case. Also, custom search is available which helps to eliminate other cases if all words don't match. 
           </div>
           <div class="column">
             <img
@@ -89,7 +94,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container container-md">
         <div class="row">
           <div class="column">
             <img
@@ -99,14 +104,14 @@
               alt=""
             />
           </div>
-          <div class="column">Filter: Filter cases date-wise or by tags.</div>
+          <div class="column">Filter: Filter cases date-wise or by tags. You can filter cases by date or date of range. Also, custom tag search is available to get cases related to tags.</div>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container container-md">
         <div class="row">
           <div class="column">
-            Location: Find the searched location from the case.
+            Location: Find the searched location from the case. All the locations are mapped on Google Maps in OpenMF. Locations are shown by using Pointers.
           </div>
           <div class="column">
             <img
@@ -119,7 +124,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container container-md">
         <div class="row">
           <div class="column">
             <img
@@ -136,13 +141,15 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container container-md">
         <div class="row">
           <div class="column">
+            <p align = "center">
             Relate one case with another using graphs, maps, and tables. Common
             locations on map, common browser history with frequency on Graph,
             common call logs, text messages using tables are available on OpenMF
             front end.
+            </p>
           </div>
           <div class="column">
             <img
@@ -156,8 +163,8 @@
       </div>
     </div>
 
-    <div class="container">
-      <h2>Data Extraction</h2>
+    <div class="container container-md">
+      <h2><i class="fas">Data Extraction</i></h2>
       <p>
         OpenMF is currently able to extract data of SMS(text messages),
         Facebook, WhatsApp, Browser history, Bluetooth data, EXIF data from
@@ -206,6 +213,7 @@
       <li>Contacts: Data like phone number and display name.</li>
     </div>
      <br>
+    
     <div class="footer-clean">
       <footer>
         <div class="container">
@@ -236,10 +244,12 @@
           </div>
         </div>
       </footer>
-     
+     </div>
     </div>
-
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>
