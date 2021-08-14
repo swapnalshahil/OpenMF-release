@@ -51,8 +51,8 @@ img.logo {
 
 .footer-clean {
   padding:50px 0;
-  background-color:#fff;
-  color:#4b4c4d;
+  background-color:rgb(6, 29, 5);
+  color:#ffffff;
 }
 
 .footer-clean h3 {
@@ -84,6 +84,7 @@ img.logo {
   text-align:center;
   align-content: center;
   align-items: center;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width:767px) {
@@ -99,6 +100,7 @@ img.logo {
   .footer-clean .item.social {
     text-align:center;
     align-content: center;
+    color: rgb(255, 255, 255);
   align-items: center;
   }
 }
@@ -113,7 +115,7 @@ img.logo {
   align-content: center;
   align-items: center;
   border-radius:50%;
-  border:1px solid #ccc;
+  border:1px solid rgb(255, 255, 255);
   margin-left:10px;
   margin-top:22px;
   color:inherit;
@@ -144,4 +146,5 @@ img.logo {
   align-items: center;
   align-content: center;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
