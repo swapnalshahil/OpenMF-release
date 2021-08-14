@@ -14,14 +14,28 @@ img.logo {
 * {
   box-sizing: border-box;
 }
-
+.p {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-self: center;
+}
 .column {
   float: left;
   width: 50%;
   padding: 10px;
+  text-align: center;
+  transform-style: flat;
+  align-content: center;
+  justify-content: space-around;
   
 }
-
+.analytics {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
 
 .row:after {
   content: "";
