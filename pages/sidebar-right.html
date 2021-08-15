@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+<title>Open MF | Documentation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('../old/img/hack4.jpg');"> 
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        
+        <h1 class="logoname"><a href="../index.html">Open<span>MF</span></a></h1>
+        
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a  href="pages/gallery.html">Blogs</a></li>
+          <li class="active"><a href="pages/sidebar-right.html">Documentation</a></li>
+          <li><a href="https://github.com/scorelab/OpenMF/wiki">Wiki</a></li>
+           
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="breadcrumb" class="hoc clear"> 
+  
+    <h6 class="heading" align="left">Documentation</h6>
+    
+ 
+  </div>
+ 
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+
+    <div class="content three_quarter first"> 
+      
+      <h1>Setting up OpenMF Frontend</h1>
+      <!-- <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt=""> -->
+      <p>After cloning, create a virtual environment and install the requirements.<br> For Linux and Mac users:</p>
+          ```<br>
+          $ virtualenv venv<br>
+          $ source venv/bin/activate<br>
+          (venv) $ pip install -r requirements.txt<br>
+          ```
+      <p>If you are on Windows, then use the following commands instead:</p>
+      <p>
+      $ virtualenv venv<br>
+      $ venv\Scripts\activate<br>
+      (venv) $ pip install -r requirements.txt<br>
+      </p>
+      <b><h1>Running</h1></b>
+      <hr>
+      <p>Step1: Change directory to React-Frontend<br></p>
+      <p>
+        (venv) $ cd React-Frontend<br>
+      </p>
+      <p>Step2: Install required dependencies<br></p>
+      <p>(venv) $ npm install<br></p>
+      <p>Step3: Run the react server:<br></p>
+      <p>(venv) $ npm start<br></p>
+      <p>And use localhost:3000 to browse.<br></p>
+      <br>
+      <hr>
+      <br>
+      <!-- <img class="imgl borderedbox inspace-5" src="../images/demo/imgl.gif" alt=""> -->
+      <b><h1>OpenMF - Flask Backend</h1></b>
+      <p><b>Update Enviornment Variables</b><br></p>
+      <p>To run the project you need to update the following ENVIRONMENT VARIABLES.<br></p>
+      <p> export FLASK_APP="api"<br></p>
+      <p> export FLASK_ENV="development or production or testing"<br></p>
+      <p> SECRET_KEY="your secret key"<br></p>
+      <p> MAIL_USERNAME= "<  Enter Mail User Name />"<br></p>
+      <p> MAIL_PASSWORD= "< Enter Mail App Password />"<br></p>
+      <p> MAIL_SERVER="< Enter Mail Server />"<br></p>
+      <p> MAIL_PORT="< Enter Mail Port Number />"<br></p><br>
+
+      <b><p>Running the Flask Server</p></b><br>
+      <p>Step 1: Set up FLASK_APP (For Linux or Mac)<br></p>
+      <p>(venv) $ `export FLASK_APP=api`<br></p>
+      <p>(For Windows)<br></p>
+      <p>(venv) $ `set FLASK_APP=api`<br></p>
+      <p>Step 2: Now, Upgrade the Migrated Database, using the following command<br></p>
+      <p>(venv) $ flask db upgrade<br></p>
+      <p>Step 3:Start the backend server To run the server use the following command:<br></p>
+      <p>(venv) $ flask run<br></p>
+      <br>
+      <h1>API Endpoints List</h1>
+      <br>
+    
+      <div class="scrollable">
+        <table>
+          <thead>
+            <tr>
+              <th>Endpoint</th>
+              <th>Methods </th>
+              <th>Rule</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>analytics.execute_query</td>
+              <td>POST</td>
+              <td>/analytics/query</td>
+              
+            </tr>
+            <tr>
+              <td>auth.login_post </td>
+              <td>POST</td>
+              <td>/login</td>
+              
+            </tr>
+            <tr>
+              <td>auth.logout </td>
+              <td>POST</td>
+              <td>/logout</td>
+              
+            </tr>
+            <tr>
+              <td>case._get_file</td>
+              <td>POST</td>
+              <td>/case/get-file</td>
+              
+            </tr>
+            <tr>
+              <td>case.case_tree</td>
+              <td>GET, POST</td>
+              <td>/case/case-tree</td>
+              
+            </tr>
+            <tr>
+              <td>case.count </td>
+              <td> GET</td>
+              <td>/case/count</td>
+              
+            </tr>
+            <tr>
+              <td>case.deletecase</td>
+              <td>POST</td>
+              <td>/case/delete</td>
+              
+            </tr>
+            <tr>
+              <td>case.extracted_cases </td>
+              <td>GET</td>
+              <td>/case/extracted-cases</td>
+              
+            </tr>
+            <tr>
+              <td>case.filter </td>
+              <td>POST</td>
+              <td>/case/filter</td>
+              
+            </tr>
+            <tr>
+              <td>case.getCase </td>
+              <td>GET </td>
+              <td>/case/get_case/< casename></td>
+              
+            </tr>
+            <tr>
+              <td>case.list  </td>
+              <td>GET  </td>
+              <td>/case/list</td>
+              
+            </tr>
+            <tr>
+              <td>case.openCase </td>
+              <td>GET</td>
+              <td>/case/open/< case_name></td>
+              
+            </tr>
+            <tr>
+              <td>case.openFile </td>
+              <td>GET </td>
+              <td>/case/list-files/< case_name>/< folder_name>/< file_name></td>
+              
+            </tr>
+            <tr>
+              <td>case.openFolder </td>
+              <td> GET </td>
+              <td>/case/list-files/< case_name>/< folder_name></td>
+              
+            </tr>
+            <tr>
+              <td>common.commonwordlist</td>
+              <td>POST</td>
+              <td>/common/< case1>/< case2></td>
+              
+            </tr>
+            <tr>
+              <td>common.mostcommonwordlist</td>
+              <td> POST </td>
+              <td>/common/words/< case1>/< case2></td>
+              
+            </tr>
+            <tr>
+              <td>data.bluetooth </td>
+              <td>GET  </td>
+              <td>/data/<case_name>/bluetooth</td>
+              
+            </tr>
+            <tr>
+              <td>data.browsers  </td>
+              <td>GET</td>
+              <td>/data/< case_name>/browsers</td>
+              
+            </tr>
+            <tr>
+              <td>data.location </td>
+              <td> GET</td>
+              <td>/data/< case_name>/location</td>
+              
+            </tr>
+            <tr>
+              <td>data.media </td>
+              <td>GET</td>
+              <td>/data/< case_name>/media</td>
+              
+            </tr>
+            <tr>
+              <td>data.sms  </td>
+              <td>GET </td>
+              <td>/data/< case_name>/sms</td>
+              
+            </tr>
+            <tr>
+              <td>extraction.extract</td>
+              <td>POST</td>
+              <td>/extraction/extract_data</td>
+              
+            </tr>
+            <tr>
+              <td>extraction.list_devices </td>
+              <td>GET</td>
+              <td>/extraction/list_devices</td>
+              
+            </tr>
+            <tr>
+              <td>keyword.customsearch</td>
+              <td>POST </td>
+              <td>/keyword/custom/search</td>
+              
+            </tr>
+            <tr>
+              <td>keyword.search  </td>
+              <td>  POST</td>
+              <td>/keyword/search</td>
+              
+            </tr>
+            <tr>
+              <td>keyword.searchfromCase </td>
+              <td>POST</td>
+              <td>/keyword/< case_name>/search</td>
+              
+            </tr>
+            <tr>
+              <td> keyword.searchtags</td>
+              <td>POST </td>
+              <td> /keyword/search/tags</td>
+              
+            </tr>
+            <tr>
+              <td>report.browserdata </td>
+              <td> POST</td>
+              <td>/report/browserdata</td>
+              
+            </tr>
+            <tr>
+              <td>report.generalinfo</td>
+              <td>POST</td>
+              <td>/report/generalinfo</td>
+              
+            </tr>
+            <tr>
+              <td>report.locationinfo </td>
+              <td>POST</td>
+              <td>/report/locations</td>
+              
+            </tr>
+            <tr>
+              <td>static   </td>
+              <td> GET</td>
+              <td>/static/< path:filename></td>
+              
+            </tr>
+            <tr>
+              <td>task.assigned_tasks</td>
+              <td>VGET</td>
+              <td>/task/assigned-tasks</td>
+              
+            </tr>
+            <tr>
+              <td>task.completed_tasks </td>
+              <td>GET </td>
+              <td>/task/completed-tasks</td>
+              
+            </tr>
+            <tr>
+              <td>task.create </td>
+              <td> POST</td>
+              <td>/task/create</td>
+              
+            </tr>
+            <tr>
+              <td>task.delete  </td>
+              <td>DELETE</td>
+              <td>/task/delete/< int:id></td>
+              
+            </tr>
+            <tr>
+              <td>task.edit_title</td>
+              <td>PUT  </td>
+              <td>/task/edit-title</td>
+              
+            </tr>
+            <tr>
+              <td>task.get_all_tasks</td>
+              <td>GET</td>
+              <td>/task/all-tasks</td>
+              
+            </tr>
+            <tr>
+              <td>task.mark_complete</td>
+              <td>PUT</td>
+              <td>/task/mark-complete/< int:id></td>
+              
+            </tr>
+            <tr>
+              <td>task.todo_tasks</td>
+              <td>GET</td>
+              <td>/task/todo-tasks</td>
+              
+            </tr>
+            <tr>
+              <td>user.add_users</td>
+              <td>POST </td>
+              <td>/user/add-user</td>
+              
+            </tr>
+            <tr>
+              <td>user.all_users</td>
+              <td>  GET </td>
+              <td>/user/all-users</td>
+              
+            </tr>
+            <tr>
+              <td>user.create_user</td>
+              <td>POST</td>
+              <td> /user/create</td>
+              
+            </tr>
+            <tr>
+              <td>user.delete</td>
+              <td> DELETE</td>
+              <td>/user/delete</td>
+              
+            </tr>
+            <tr>
+              <td>user.deleteuser </td>
+              <td>DELETE, POST</td>
+              <td>/user/delete-user</td>
+              
+            </tr>
+            <tr>
+              <td>user.extracted_cases </td>
+              <td> POST </td>
+              <td>/user/extracted-cases</td>
+              
+            </tr>
+            <tr>
+              <td>user.getUser</td>
+              <td> GET </td>
+              <td>/user/getAdmin/<int:id></td>
+              
+            </tr>
+            <tr>
+              <td>user.get_extracted_cases</td>
+              <td>  GET</td>
+              <td>/user/extractor/extracted-cases</td>
+              
+            </tr>
+            <tr>
+              <td>user.get_extractor </td>
+              <td>GET </td>
+              <td>/user/getExtractor/< int:id></td>
+              
+            </tr>
+            <tr>
+              <td>user.get_management</td>
+              <td>GET</td>
+              <td>/user/getManagement/< int:id></td>
+              
+            </tr>
+            <tr>
+              <td>user.profile</td>
+              <td>GET</td>
+              <td>/user/profile</td>
+              
+            </tr>
+            <tr>
+              <td>user.roleupdate</td>
+              <td>PUT</td>
+              <td>/user/role-update</td>
+              
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h1>Note: You can find the updated list of API endpoints using the following command<br></h1>
+        <p>(venv) $ flask routes<br></p>
+      </div>
+      
+   
+    </div>
+
+    <div class="sidebar one_quarter"> 
+      
+      <!-- <h6>Lorem ipsum dolor</h6> -->
+      <nav class="sdb_holder">
+        <ul>
+          <li><a href="#">Open MF Frontend</a></li>
+          <li><a href="#">Running</a>
+            
+          </li>
+          <li><a href="#">OpenMF - Flask Backend</a>
+           
+          </li>
+          <li><a href="#">Update Enviornment Variables</a></li>
+          <li><a href="#">Running the Flask Server</a></li>
+          <li><a href="#">API Endpoints List</a></li>
+          
+        </ul>
+      </nav>
+      
+      
+      
+    </div>
+ 
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+<div class="bgded overlay row4" style="background-image:url('../old/img/hack5.jpg');">
+  <footer id="footer" class="hoc clear"> 
+    
+    
+    <div class="group">
+      <div class="one_quarter first">
+        <h1 class="logoname"><a href="index.html">SCoRe<span>Lab</span></a></h1>
+        <p>The SCoRe Lab has conducted research covering various aspects of sensor networks, embeded systems, digital forensic, information security, mobile applications, cloud, blockchain and software tools. [<a href="https://scorelab.org/">&hellip;</a>]</p>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="https://www.facebook.com/SCoRe.Lab.Org/"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="faicon-google-plus" href="https://scorelab.org/"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a class="faicon-linkedin" href="https://www.linkedin.com/company/sustainable-computing-research-group-score-/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="faicon-twitter" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          
+        </ul>
+      </div>
+      <div class="one_quarter">
+      </div>
+      <div class="one_quarter">
+        <h3 class="heading">Blogs</h3>
+        <ul class="nospace linklist">
+          <li><a href="https://medium.com/scorelab/google-summer-of-code-openmf-week-9-8c7c0e3dd94c">Data Visualization</a></li>
+          <li><a href="https://medium.com/scorelab/journey-to-google-summer-of-code-2021-7ead13c15609">SCoRe Lab Journey (Swapnal)</a></li>
+          <li><a href="https://medium.com/@sachinsom507?p=cc1bb3b58e35">Management OpenMF</a></li>
+          <li><a href="https://medium.com/scorelab/my-journey-of-gsoc-2021-week-1-b901e70414be">SCoRe Lab Journey (Sachin)</a></li>
+          <li><a href="https://medium.com/scorelab/gsoc2-all-blogs-in-one-place-77061ef6c193">SCoRe Lab Journey (Shivanshu)</a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">OpenMF Contributors</h6>
+        <ul class="nospace clear latestimg">
+          <li><a class="" href="#"><img src="https://avatars.githubusercontent.com/u/58564017?v=4?" alt=""></a></li>
+          <li><a class="" href="#"><img src="https://avatars.githubusercontent.com/u/64790109?v=4" alt=""></a></li>
+          <li><a class="" href="#"><img src="https://avatars.githubusercontent.com/u/26167974?v=4" alt=""></a></li>
+          <li><a class="" href="#"><img src="https://avatars.githubusercontent.com/u/23487061?v=4" alt=""></a></li>
+          <li><a class="" href="#"><img src="https://avatars.githubusercontent.com/u/700745?v=4" alt=""></a></li>
+          <li><a class="" href="#"><img src="https://avatars.githubusercontent.com/u/25587962?v=4" alt=""></a></li>
+          <!-- <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+          <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li>
+          <li><a class="imgover" href="#"><img src="images/demo/100x100.png" alt=""></a></li> -->
+        </ul>
+      </div>
+    </div>
+   
+    
+    <figure id="ctdetails">
+      <ul class="nospace group">
+        <li class="one_third first">
+          <div class="clear"><a href="https://gitter.im/scorelab/"><i class="fab fa-gitter"></i></a> <span><strong>Discuss your ideas here</strong>on Gitter.</span></div>
+        </li>
+        <li class="one_third">
+          <div class="clear"><a href="https://groups.google.com/g/score-community"><i class="fas fa-envelope"></i></a> <span><strong>Send us a mail:</strong> score-community</span></div>
+        </li>
+        <li class="one_third">
+          <div class="clear"><a href="https://scorelab.org/team"><i class="fas fa-map-marker-alt"></i></a> <span><strong>Come visit us:</strong> <a href="https://scorelab.org/team">https://scorelab.org/team</a></span></div>
+        </li>
+      </ul>
+    </figure>
+
+    
+  </footer>
+</div>
+
+
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+
+    
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - <a href="https://swapnalshahil.github.io/">Swapnal Shahil (SCoRe Lab)</a></p>
+    
+    
+  </div>
+</div>
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

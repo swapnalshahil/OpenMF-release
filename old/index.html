@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="OpenMF" />
+    <meta name="description" content="OpenMF" />
+    <meta name="keywords" content="scorelab, openmf, mobile forensics, gsoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenMF</title>
+    <link rel="icon" href="img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/openmf.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Recursive&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+  </head>
+  <body>
+    
+
+    <div class="container container-md">
+      <img
+        class="logo"
+        src="img\Logo.png"
+        width="300px"
+        align="middle"
+        id="logo"
+      />
+      <div class="container">
+      <img src="https://scorelab.org/logos/main-logo.jpeg" class="scorelab" align="middle" id="scorelab" height="90px" width="220px" />
+     </div>
+    </div>
+     <br>
+    <div class="container container-md">
+      <p>
+        OpenMF is an open source forensic tool for Android smartphones that
+        helps digital forensic investigators throughout the life cycle of
+        digital forensic investigation.
+      </p>
+      <p>
+        For e.g. let us say we have a crime scene in which we have captured some
+        suspects and we have their mobile phones. If we want to extract all the
+        data from their phones and see which of them are actually involved in
+        the crime scene then we require a software to perform this task and
+        produce Meaningful evidence and Analysis report for every phone (Digital
+        forensic case).
+      </p>
+    </div>
+    <div class="container container-md">
+      <h2><i class="fas fa-analytics">Analytics</i></h2>
+      <p>
+        OpenMF analytics is a mobile forensic analytics service offered by SCoRe
+        Lab (Sustainable Computing Research Lab) that helps to analyze data
+        extracted from Android Devices.
+      </p>
+      <div class="container ">
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://github.com/swapnalshahil/OpenMF-release/blob/main/video/Analytics%20-%20common%20words.gif?raw=true"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            Common Words: Search common words between the data to relate between two cases.<br />
+          </div>
+        </div>
+      </div>
+      <div class="container container-md">
+        <div class="row">
+          <div class="column">
+            Keyword Search: Search keywords to relate the cases from the overall database as well as from particular cases. OpenMF is able to find cases if you know even a single word related to the case. Also, custom search is available which helps to eliminate other cases if all words don't match. 
+          </div>
+          <div class="column">
+            <img
+              src="https://github.com/swapnalshahil/OpenMF-release/blob/main/video/Analytics%20-%20keyword%20search.gif?raw=true"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-md">
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://github.com/swapnalshahil/OpenMF-release/blob/main/video/Analytics%20-%20filtercases.gif?raw=true"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+          <div class="column">Filter: Filter cases date-wise or by tags. You can filter cases by date or date of range. Also, custom tag search is available to get cases related to tags.</div>
+        </div>
+      </div>
+
+      <div class="container container-md">
+        <div class="row">
+          <div class="column">
+            Location: Find the searched location from the case. All the locations are mapped on Google Maps in OpenMF. Locations are shown by using Pointers.
+          </div>
+          <div class="column">
+            <img
+              src="https://github.com/swapnalshahil/OpenMF-release/blob/main/video/Analytics%20-%20location.gif?raw=true"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-md">
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://github.com/swapnalshahil/OpenMF-release/blob/main/video/Analytics%20-%20Report(data-visualization).gif?raw=true"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            Data Visualization: Visualize data using maps, graphs, and tables
+            from the case.
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-md">
+        <div class="row">
+          <div class="column">
+            <p align = "center">
+            Relate one case with another using graphs, maps, and tables. Common
+            locations on map, common browser history with frequency on Graph,
+            common call logs, text messages using tables are available on OpenMF
+            front end.
+            </p>
+          </div>
+          <div class="column">
+            <img
+              src="https://github.com/swapnalshahil/OpenMF-release/blob/main/video/Analytics%20-%20datavisualization%20between%20two%20case.gif?raw=true"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-md">
+      <h2><i class="fas">Data Extraction</i></h2>
+      <p>
+        OpenMF is currently able to extract data of SMS(text messages),
+        Facebook, WhatsApp, Browser history, Bluetooth data, EXIF data from
+        images, Location history, General information of the device, Call logs,
+        and Contacts. Data can be extracted from CMD as well as using
+        API(POSTMAN) or from Frontend also.
+      </p>
+      <li>
+        SMS: Data like thread_id, address, date, date_sent, read, body, creator,
+        seen, sim_slot, sim_imsi.
+      </li>
+      <li>
+        Facebook: Data like text, contacts, senders name, timestamp, profile id.
+      </li>
+      <li>WhatsApp: Data like mobile number, time, text, type, media name.</li>
+      <li>
+        Browser History: Data like URLs, URLs title, Visit count, Urls last
+        visit time, hidden, visit time, visit duration, visits transition, visit
+        source.
+      </li>
+      <li>
+        Bluetooth: Data like shared file path, name of the file, data, type,
+        direction, destination, visibility, status, total bytes, timestamp,
+        device name.
+      </li>
+      <li>
+        EXIF data: Data from images like file path, size, date taken, mime_type,
+        title, description, display name, Picasa id, orientation, latitude,
+        longitude, date added, date modified, mini_thumb_magic, bucket id,
+        bucket display name, album, tags, category, language, storage id, width,
+        and height.
+      </li>
+      <li>
+        Location: Data like latitude, longitude, timestamp, and saved location
+        link.
+      </li>
+      <li>
+        General Information: Data like Shell permission, ADB serial,
+        Manufacturer, Model number, IMEI, Android Version, Build name, Wifi MAC,
+        Local time, Android time, Accounts, Case Name, and Tags.
+      </li>
+      <li>
+        Call logs: Data like number,name,date,duration,type,location, and
+        frequent.
+      </li>
+      <li>Contacts: Data like phone number and display name.</li>
+    </div>
+     <br>
+    
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            
+            <div class="col-lg-6 item social">
+              <a href="https://www.facebook.com/SCoRe.Lab.Org/"
+                ><i class="icon ion-social-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="icon ion-social-twitter"></i
+              ></a>
+              <a href="https://gitter.im/scorelab/"
+                ><i class="icon fab fa-gitter"></i
+              ></a>
+              <a href="https://medium.com/scorelab/"
+                ><i class="icon fab fa-medium"></i
+              ></a>
+              <a href="https://github.com/scorelab/"
+                ><i class="icon ion-social-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/sustainable-computing-research-group-score-/"
+                ><i class="icon ion-social-linkedin"></i
+              ></a>
+              <p class="copyright">SCoRe Lab © 2021</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+     </div>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
