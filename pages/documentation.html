@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="">
+<html lang="en-US">
 
 <head>
 <title>Open MF | Documentation</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" href="./old/img/Logo.png" type="image/x-icon">
 </head>
 <body id="top">
 
@@ -48,7 +49,7 @@
     <!-- main body -->
 
     <div class="content three_quarter first"> 
-      
+      <div id="frontend"></div>
       <h1>Setting up OpenMF Frontend</h1>
       <!-- <img class="imgr borderedbox inspace-5" src="../images/demo/imgr.gif" alt=""> -->
       <p>After cloning, create a virtual environment and install the requirements.<br> For Linux and Mac users:</p>
@@ -63,6 +64,7 @@
       $ venv\Scripts\activate<br>
       (venv) $ pip install -r requirements.txt<br>
       </p>
+      <div id="running"></div>
       <b><h1>Running</h1></b>
       <hr>
       <p>Step1: Change directory to React-Frontend<br></p>
@@ -77,6 +79,7 @@
       <br>
       <hr>
       <br>
+      <div id="backend"></div>
       <!-- <img class="imgl borderedbox inspace-5" src="../images/demo/imgl.gif" alt=""> -->
       <b><h1>OpenMF - Flask Backend</h1></b>
       <p><b>Update Enviornment Variables</b><br></p>
@@ -88,7 +91,7 @@
       <p> MAIL_PASSWORD= "< Enter Mail App Password />"<br></p>
       <p> MAIL_SERVER="< Enter Mail Server />"<br></p>
       <p> MAIL_PORT="< Enter Mail Port Number />"<br></p><br>
-
+      <div id="server"></div>
       <b><p>Running the Flask Server</p></b><br>
       <p>Step 1: Set up FLASK_APP (For Linux or Mac)<br></p>
       <p>(venv) $ `export FLASK_APP=api`<br></p>
@@ -99,6 +102,7 @@
       <p>Step 3:Start the backend server To run the server use the following command:<br></p>
       <p>(venv) $ flask run<br></p>
       <br>
+      <div id="endpoints"></div>
       <h1>API Endpoints List</h1>
       <br>
     
@@ -434,16 +438,16 @@
       <!-- <h6>Lorem ipsum dolor</h6> -->
       <nav class="sdb_holder">
         <ul>
-          <li><a href="#">Open MF Frontend</a></li>
-          <li><a href="#">Running</a>
+          <li><a href="#frontend">Open MF Frontend</a></li>
+          <li><a href="#running">Running</a>
             
           </li>
-          <li><a href="#">OpenMF - Flask Backend</a>
+          <li><a href="#backend">OpenMF - Flask Backend</a>
            
           </li>
-          <li><a href="#">Update Enviornment Variables</a></li>
-          <li><a href="#">Running the Flask Server</a></li>
-          <li><a href="#">API Endpoints List</a></li>
+          <li><a href="#backend">Update Enviornment Variables</a></li>
+          <li><a href="#server">Running the Flask Server</a></li>
+          <li><a href="#endpoints">API Endpoints List</a></li>
           
         </ul>
       </nav>
